@@ -14,6 +14,54 @@
 body{
     width: 100%;
 }
+
+.wrapSeleccionPais{
+    width: 100%;
+    height: 160px;
+    background-color: #D61A0C;
+    display: none;
+    
+}
+.seleccionPais{
+    height: 100%;
+    color: #ffffff;
+    font-family: 'monserrat';
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: start;  
+    align-items: flex-start;  
+}
+.region{        
+    margin: 40px;
+    
+}
+.region h3{
+    font-size: 1rem;   
+    margin-bottom: 10px; 
+}
+.region a{
+    color: #ffffff;
+    font-size: 0.8rem;
+    text-decoration: none;
+    
+}
+.region ul{
+    list-style: none;
+    
+}
+
+.regionContent{
+    display: flex;
+    
+}
+
+.region .fa-globe-americas, .fa-globe-europe, .fa-globe{
+    font-size: 50px;
+    margin-right: 5px;
+}
+.regionContent a:hover{
+    text-decoration: underline;
+}
 .wraper-menu-superior{
     display: flex;
     flex-flow: row wrap;
@@ -32,6 +80,22 @@ header{
     flex-flow: row wrap; 
     align-items: center;
     justify-content: center;   
+}
+.header-menu-superior a:hover{
+    background-color: black;
+}
+
+#twiter:hover{
+    background-color: #1DA1F2;
+}
+#youtube:hover{
+    background-color: #FF0000;
+}
+#instagram:hover{
+    background-color: #DB4D56;
+}
+#facebook:hover{
+    background-color: #4464A7;
 }
 .header-menu-superior li:first-child{
     border-right: 1px solid gray;
@@ -56,6 +120,7 @@ header{
     padding: 5px;  
     margin: 5px;  
     width: 100%;
+  
 }
 .selectIdioma{    
     padding: 5px;

@@ -2,29 +2,77 @@
 <html lang="en">
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7715a316f7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
+    
     <title>Miguélez-Cables eléctricos</title>
 </head>
 
 <body>
     <div class="contenedorGeneral">
         <header>
+            <div id="wrapSeleccionPais" class="wrapSeleccionPais">
+                <div class="seleccionPais">
+                    <div class="region">
+                        <h3>Ámerica del norte</h3>
+                        <div class="regionContent">
+                            <i class="fas fa-globe-americas"></i>
+                            <a href="#">Estados Unidos</a>
+                        </div>
+                    </div>
+                    <div class="region">
+                        <h3>Ámerica Latina</h3>
+                        <div class="regionContent">
+                            <i class="fas fa-globe-americas"></i>
+                            <ul>
+                                <li><a href="#">Chile</a></li>
+                                <li><a href="#">Perú</a></li>
+                                <li><a href="#">Panamá</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="region">
+                        <h3>Europa</h3>
+                        <div class="regionContent">
+                            <i class="fas fa-globe-europe"></i>
+                            <ul>
+                                <li><a href="#">España</a></li>
+                                <li><a href="#">Portugal</a></li>
+                                <li><a href="#">Francia</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="region">
+                        <h3>Global</h3>
+                        <div class="regionContent">
+                            <i class="fas fa-globe"></i>
+                            <a href="#">World-Wide(Sitio global)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="wraper-menu-superior">
                 <ul class="header-menu-superior">
-                    <li><a href="">ACTUALIDAD</a></li>
-                    <li><a href="" class="bold">Llámenos: <i class="fas fa-phone-alt"></i> +34-987 84 51 00</a></li>
+                    <li><a href="#">ACTUALIDAD</a></li>
+                    <li><a href="#" class="bold">Llámenos: <i class="fas fa-phone-alt"></i> +34-987 84 51 00</a></li>
                 </ul>
                 <ul class="header-menu-superior">
-                    <li class="bordeDerecha"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="bordeDerecha bordeIzquierda"><a href=""><i class="fab fa-youtube"></i></a></li>
-                    <li class="bordeDerecha bordeIzquierda"><a href=""><i class="fab fa-twitter"></i>></a></li>
-                    <li class="bordeDerecha bordeIzquierda"><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li class="bordeDerecha"><a id="facebook" href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="bordeDerecha bordeIzquierda"><a id="youtube" href=""><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="bordeDerecha bordeIzquierda"><a id="twiter" href=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="bordeDerecha bordeIzquierda"><a id="instagram" href=""><i
+                                class="fab fa-instagram"></i></a></li>
                     <li>
-                        <button class="boton"><i class="fas fa-globe-americas"></i>ESPAÑA <i class="fas fa-angle-up"></i></i></button>
+                        <button id="flip" class="boton" href=""><i class="fas fa-globe-americas"></i>ESPAÑA <i id="crosspais" class="fas fa-angle-up"></i></i></button>
                     </li>
                     <li>
                         <select class="selectIdioma" name="" id="">
@@ -33,11 +81,14 @@
                             <option class="optionIdioma" value="frances">Frances</option>
                             <option class="optionIdioma" value="portugues">Portugues</option>
                         </select>
+
                     </li>
                 </ul>
             </div>
+
         </header>
     </div>
 </body>
+<script src="js/main.js"></script>
 
 </html>
