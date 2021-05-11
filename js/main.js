@@ -10,7 +10,7 @@ function seleccionarPais(ev){
 $(document).ready(function(){
 
     $("#flip").click(function(){
-        console.log("jola");
+       
         $('#wrapSeleccionPais').slideToggle('slow');   
         document.getElementById("crosspais").classList.toggle('fa-times',true);
         document.getElementById("crosspais").classList.toggle('fa-angle-up',true);
