@@ -16,5 +16,14 @@ $(document).ready(function(){
         document.getElementById("crosspais").classList.toggle('fa-angle-up',true);
     });
 
+    $("#empresa").on('click', function(event){
+        event.preventDefault();
+        console.log("despliega");
+
+        $('#empresa i').removeClass('fa-angle-down');
+        $('#empresa i').addClass('fa-times');
+        $('#box-empresa').slideToggle('slow');  
+                 
+    })
 
 })
