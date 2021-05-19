@@ -152,14 +152,16 @@ header{
     margin-right: 20px;
     margin-left: 40px;
 }
-
+.iluminar{
+    background-color: #E7E7E7;
+}
 .menu-inferior{
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
 }
 .menu-item{
-    padding: 18px;
+   
     display: flex;
     flex-flow: row;    
 }
@@ -170,10 +172,15 @@ header{
     font-family: 'monserrat';
     font-size: 0.9em;
     transition: all 0.3s;
+    padding: 30px;
+    /*padding-bottom: 5px;*/
 }
 .menu-item a:hover h3{
     color: #D61A0C;
 }
+
+
+
 .menu-item a:hover .fa-search{
     color: #D61A0C;
 }
@@ -182,33 +189,36 @@ header{
     color: #D61A0C;
     font-size: 16px;
 }
-#box-empresa{
-    display: none;
+
+
+.open{
+    display: block;
 }
-.box-empresa{
-    background-color: #E7E7E7;
-    display: flex;
+.box-empresa, .box-contacto,.box-producto,.box-cpr{
+    background-color:#E7E7E7; 
+    display: none;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
-    height: 320px;
-    
-
+    height: 320px; 
 }
-.menu-empresa{
+.close{
+    display: none;
+}
+.menu-dropdown{
     background-color: #F1F1F1;
     margin: 50px;
     margin-left: 200px;
     width: 25%;
     
 }
-.box-empresa-content{
+.box-dropdown-content{
     width: 50%;
     margin-top: 50px;
     margin-right: 175px;
 }
 
-.box-empresa-content h1{
+.box-dropdown-content h1{
     font-family: 'monserrat';
     font-weight: lighter;
     color: #D61A0C;
@@ -216,7 +226,7 @@ header{
     border-bottom: 1px solid white ;    
     padding-bottom: 25px;
 }
-.box-empresa-content p{
+.box-dropdown-content p{
     font-family: 'monserrat';
     margin-top: 15px;
     font-size: 0.9rem;
@@ -226,18 +236,18 @@ header{
     color: #D61A0C;
     transition: all 300ms;
 }
-.menu-empresa ul{
+.menu-dropdown ul{
     list-style: none;
     display: flex;
     flex-direction: column;    
 }
 
-.menu-empresa ul li{
+.menu-dropdown ul li{
     border-bottom: 1px solid #E7E7E7;
 
 }
 
-.menu-empresa ul li a{
+.menu-dropdown ul li a{
     display: block;
     padding: 10px;
     color: #363636;
@@ -247,18 +257,18 @@ header{
     font-weight: 600;
     transition: all 300ms;
 }
-.menu-empresa ul li a:hover{
+.menu-dropdown ul li a:hover{
     color:white;
     background-color: #868484 ;
 }
 .menu-empresa ul li a:hover span{
     padding-left: 10px;
 }
-.menu-empresa ul li a:hover .fa-chevron-right{
+.menu-dropdown ul li a:hover .fa-chevron-right{
     padding-left: 10px;
 }
 
-.menu-empresa ul li a span{
+.menu-dropdown ul li a span{
     margin-left: 5px;
     transition: all 300ms;
 }
