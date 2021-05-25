@@ -13,6 +13,8 @@
 }
 body{
     width: 100%;
+    font-family: "monserrat";
+    height: 1000px;
 }
 
 .wrapSeleccionPais{
@@ -69,9 +71,10 @@ body{
     justify-content: space-between;
     background-color: #666666;
     height: 38px;   
+    width: 100%;
 }
 header{
-    width: 100%;
+    width: 100%;    
 }
 .header-menu-superior{
     list-style: none;
@@ -141,9 +144,10 @@ header{
     display: inline-flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: start;
     background-color: #ffffff;
-    height: 76px;   
+    height: 76px; 
+    width: 100%;  
 }
 .logo{
     width: 150px;
@@ -200,7 +204,9 @@ header{
     align-items: flex-start;
     justify-content: center;
     width: 100%;
-    height: 320px; 
+    height: 400px; 
+    
+    
 }
 .close{
     display: none;
@@ -271,4 +277,90 @@ header{
 .menu-dropdown ul li a span{
     margin-left: 5px;
     transition: all 300ms;
+}
+
+.box-catalogo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #777677;
+    height: 500px;    
+    margin-top: 0px;
+}
+
+.box-catalogo a{
+    text-decoration: none;
+    color: #ffff;
+    border: 2px solid #b4b3b3;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 300ms;
+}
+
+.box-catalogo a:hover{
+    border-color: #D61A0C;
+    transform: scale(1.1 , 1); 
+}
+
+.catalogo-content {
+    text-align: center;
+    color: #b4b3b3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.catalogo-content h2{
+    font-size: 4rem;
+}
+.catalogo-content h4{
+    font-size: 1.8rem;
+}
+.catalogo-content ul{
+    list-style-type: none;
+}
+.catalogo-content ul li{
+    padding: 15px;
+}
+.botonFixed{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    top: 150px;
+    left: 70px;
+    display: block;    
+    border-radius: 50%;
+    color: #F1F1F1;
+    background-color: #D61A0C;
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 70px;
+}
+.botonFixed:hover{
+    background-color: #000000;
+}
+.abajo{
+    top: 250px;
+}
+.fa-envelope{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    line-height: 80px;
+}
+.linea{
+    width: 70px;
+    border: 2px solid #F1F1F1;
+}
+.box-cu{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #a71106;
+    color: #F1F1F1;
+    height: 500px;    
+    margin-top: 0px;
+}
+.box-cu:first-child{
+    margin-top: 100px;
 }
