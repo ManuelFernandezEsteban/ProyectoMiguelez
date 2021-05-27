@@ -14,7 +14,7 @@
 body{
     width: 100%;
     font-family: "monserrat";
-    height: 1000px;
+    height: 2000px;
 }
 
 .wrapSeleccionPais{
@@ -350,6 +350,7 @@ header{
 .linea{
     width: 70px;
     border: 2px solid #F1F1F1;
+    transition: all 300ms;
 }
 .box-cu{
     display: flex;
@@ -358,9 +359,68 @@ header{
     align-items: center;
     background-color: #a71106;
     color: #F1F1F1;
-    height: 500px;    
+    height: 650px;    
     margin-top: 0px;
+   
 }
-.box-cu:first-child{
+.box-cu:hover .linea{
+    width: 200px;
+}
+.box-cu :first-child{
     margin-top: 100px;
+    font-style: italic;
 }
+.box-cu :last-child{
+    margin-bottom: 100px;
+    
+}
+.box-cu h2{
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+.fechaCu{
+    font-style: italic;
+}
+
+.box-cu a{
+    text-decoration: none;
+    color: #ffff;
+    border: 2px solid #b4b3b3;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 300ms;
+}
+
+.box-cu a:hover{
+    border-color: black;
+    transform: scale(1.1 , 1); 
+}
+.lineaFina{
+    width: 80%;
+    border: 0.5px solid #F1F1F1;
+}
+
+.box-cards{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+}
+.box-cards article{
+    flex:1;    
+    border: 1px solid white;
+    width: 300px;    
+}
+.box-cards img{
+    width: 100%;
+}
+
+.cards-content{
+    position: absolute;
+    bottom: 100px;
+    text-align: center;
+}
+
+
