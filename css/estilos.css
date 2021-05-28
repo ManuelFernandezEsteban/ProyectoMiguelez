@@ -335,6 +335,7 @@ header{
     font-weight: bolder;
     text-align: center;
     line-height: 70px;
+    z-index: 2;
 }
 .botonFixed:hover{
     background-color: #000000;
@@ -406,21 +407,44 @@ header{
     justify-content: center;
     align-items: center;
     height: 400px;
-    overflow: hidden;
+    
 }
 .box-cards article{
-    flex:1;    
+    flex:1 1 0%;    
     border: 1px solid white;
-    width: 300px;    
+    position: relative; 
+    overflow: hidden; 
+    /*width: 300px;    */
 }
 .box-cards img{
     width: 100%;
+    filter: grayscale(100%);
+    transition: all 300ms;    
+}
+.box-cards article:hover img{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.box-cards article a{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
 }
 
 .cards-content{
-    position: absolute;
-    bottom: 100px;
-    text-align: center;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #E7E7E7;
+    width: 95%;
+    margin-bottom: 10px;
+    bottom: 0%;
+    background-color: #666666;       
 }
+
 
 
